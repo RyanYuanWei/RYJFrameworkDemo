@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="RYJMvvmStudentCollectionViewCell" id="8pc-IM-hMb" customClass="RYJMvvmStudentCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="453" height="112"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrT-91-tH5">
+                        <rect key="frame" x="0.0" y="0.0" width="453" height="112"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7k-3q-kBY">
+                        <rect key="frame" x="26" y="45.5" width="42" height="21"/>
+                        <color key="backgroundColor" red="0.3688030243" green="0.59838056559999997" blue="0.82360446450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-D5-bm5">
+                        <rect key="frame" x="90" y="45.5" width="42" height="21"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="807-z1-yjT">
+                        <rect key="frame" x="165" y="41" width="98" height="30"/>
+                        <state key="normal" title="Name Change">
+                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickNameChangeButton:" destination="8pc-IM-hMb" eventType="touchUpInside" id="BO6-Ho-Cfs"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.3688030243" green="0.59838056559999997" blue="0.82360446450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="807-z1-yjT" firstAttribute="centerY" secondItem="nrT-91-tH5" secondAttribute="centerY" id="6PP-i0-MyQ"/>
+                <constraint firstItem="Uts-D5-bm5" firstAttribute="leading" secondItem="L7k-3q-kBY" secondAttribute="trailing" constant="22" id="8TD-DH-vUL"/>
+                <constraint firstItem="nrT-91-tH5" firstAttribute="top" secondItem="8pc-IM-hMb" secondAttribute="top" id="EYH-vt-35l"/>
+                <constraint firstItem="Uts-D5-bm5" firstAttribute="centerY" secondItem="nrT-91-tH5" secondAttribute="centerY" id="GQj-EJ-jkD"/>
+                <constraint firstAttribute="trailing" secondItem="nrT-91-tH5" secondAttribute="trailing" id="IXG-cV-D0v"/>
+                <constraint firstItem="807-z1-yjT" firstAttribute="leading" secondItem="Uts-D5-bm5" secondAttribute="trailing" constant="33" id="Zr6-Ma-uRF"/>
+                <constraint firstItem="nrT-91-tH5" firstAttribute="leading" secondItem="8pc-IM-hMb" secondAttribute="leading" id="azX-3A-fYQ"/>
+                <constraint firstItem="L7k-3q-kBY" firstAttribute="leading" secondItem="8pc-IM-hMb" secondAttribute="leading" constant="26" id="mzm-6t-Ygg"/>
+                <constraint firstItem="L7k-3q-kBY" firstAttribute="centerY" secondItem="nrT-91-tH5" secondAttribute="centerY" id="syU-W3-gyr"/>
+                <constraint firstAttribute="bottom" secondItem="nrT-91-tH5" secondAttribute="bottom" id="xVh-n4-wr3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="lz9-z7-2Uh"/>
+            <size key="customSize" width="453" height="112"/>
+            <connections>
+                <outlet property="ageLabel" destination="Uts-D5-bm5" id="hS7-j9-rIi"/>
+                <outlet property="nameChangeButton" destination="807-z1-yjT" id="UOA-4t-b3v"/>
+                <outlet property="nameLabel" destination="L7k-3q-kBY" id="rCU-XI-9zy"/>
+            </connections>
+            <point key="canvasLocation" x="-1047" y="65"/>
+        </collectionViewCell>
+    </objects>
+</document>

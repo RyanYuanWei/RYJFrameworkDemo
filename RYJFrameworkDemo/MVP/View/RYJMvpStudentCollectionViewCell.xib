@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="RYJMvpStudentCollectionViewCell" id="gTV-IL-0wX" customClass="RYJMvpStudentCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="453" height="112"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAh-Ij-eUt">
+                        <rect key="frame" x="0.0" y="0.0" width="453" height="112"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGy-qa-KVy">
+                        <rect key="frame" x="26" y="45.5" width="42" height="21"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyO-gb-59v">
+                        <rect key="frame" x="90" y="45.5" width="42" height="21"/>
+                        <color key="backgroundColor" red="0.56169027090000001" green="0.0001323400211" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlg-zW-QTE">
+                        <rect key="frame" x="165" y="41" width="98" height="30"/>
+                        <state key="normal" title="Name Change"/>
+                        <connections>
+                            <action selector="clickNameChangeButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="3Vo-dx-GMJ"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.3688030243" green="0.59838056559999997" blue="0.82360446450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="CyO-gb-59v" firstAttribute="centerY" secondItem="MAh-Ij-eUt" secondAttribute="centerY" id="6jX-3D-toh"/>
+                <constraint firstItem="MAh-Ij-eUt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="79d-Jd-9ox"/>
+                <constraint firstItem="CyO-gb-59v" firstAttribute="leading" secondItem="cGy-qa-KVy" secondAttribute="trailing" constant="22" id="Fjc-ja-aC5"/>
+                <constraint firstItem="MAh-Ij-eUt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IlJ-wd-RJE"/>
+                <constraint firstItem="wlg-zW-QTE" firstAttribute="centerY" secondItem="MAh-Ij-eUt" secondAttribute="centerY" id="Kyr-2p-hwa"/>
+                <constraint firstAttribute="bottom" secondItem="MAh-Ij-eUt" secondAttribute="bottom" id="Muq-Lc-NPB"/>
+                <constraint firstItem="cGy-qa-KVy" firstAttribute="centerY" secondItem="MAh-Ij-eUt" secondAttribute="centerY" id="Mxp-Af-3Mf"/>
+                <constraint firstItem="wlg-zW-QTE" firstAttribute="leading" secondItem="CyO-gb-59v" secondAttribute="trailing" constant="33" id="POy-zN-0mW"/>
+                <constraint firstAttribute="trailing" secondItem="MAh-Ij-eUt" secondAttribute="trailing" id="QKY-E5-jvl"/>
+                <constraint firstItem="cGy-qa-KVy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="26" id="WrY-1x-iKY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="453" height="112"/>
+            <connections>
+                <outlet property="ageLabel" destination="CyO-gb-59v" id="zBM-Aw-PLc"/>
+                <outlet property="nameChangeButton" destination="wlg-zW-QTE" id="nFG-eV-NLr"/>
+                <outlet property="nameLabel" destination="cGy-qa-KVy" id="yMI-rE-I30"/>
+            </connections>
+            <point key="canvasLocation" x="-1047" y="65"/>
+        </collectionViewCell>
+    </objects>
+</document>
